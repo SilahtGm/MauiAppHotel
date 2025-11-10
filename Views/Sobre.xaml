@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <VerticalStackLayout 
+                             Spacing="15"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center">
+
+
+           
+            <Label Text="Sobre o App Hotel"
+                   FontSize="34"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"/>
+
+            
+            <Frame Padding="25"
+                   CornerRadius="25"
+                   HasShadow="True"
+                   BackgroundColor="#1C1C1C"
+                   Margin="10,0">
+
+                <VerticalStackLayout Spacing="10"
+                                     HorizontalOptions="Center">
+
+                    <Label Text="Desenvolvido por:"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Thalis Cleiton Sousa Cruz"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center"/>
+
+                    <BoxView HeightRequest="1" Color="#444" Margin="0,10"/>
+
+                    <Label Text="Projeto criado como parte do curso Técnico em Desenvolvimento de Sistemas."
+                           FontSize="16"
+                           TextColor="Gray"
+                           HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Ano: 2025"
+                           FontSize="16"
+                           TextColor="Gray"
+                           HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            
+            <Button Text="Voltar ao Início"
+                    BackgroundColor="Grey"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    WidthRequest="250"
+                    HeightRequest="55"
+                    HorizontalOptions="Center"
+                    Clicked="VoltarAoInicio_Clicked"/>
+
+           
+            <Label Text="© 2025 - AppHotel | Todos os direitos reservados."
+                   FontSize="14"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,15,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

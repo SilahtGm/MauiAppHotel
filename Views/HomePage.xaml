@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HomePage"
+             BackgroundColor="{StaticResource Gray100}"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <Label Text="Bem-vindo ao nosso Hotel"
+               FontSize="45"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"/>
+
+        <Button Text="Contratar Hospedagem"
+                BackgroundColor="Black"
+                TextColor="White"
+                CornerRadius="25"
+                FontAttributes="Bold"
+                Clicked="IrParaContratacao"
+                WidthRequest="250"
+                Margin="0,20,0,10"/>
+
+        <Button Text="Sobre o App"
+         BackgroundColor="Black"
+         TextColor="White"
+         CornerRadius="25"
+         FontAttributes="Bold"
+         Clicked="IrParaSobre"
+         WidthRequest="250"/>
+    </VerticalStackLayout>
+</ContentPage>
